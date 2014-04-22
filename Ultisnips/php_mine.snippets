@@ -1,0 +1,7 @@
+snippet @a
+	@author     Adam Bellinson <adambellinson@quickenloans.com>
+endsnippet
+snippet caller
+	$trace = debug_backtrace(); $caller = array_shift($trace); $caller = array_shift($trace);
+	echo 'called by ' . $caller['function'] . (isset($caller['class']) ? ' in ' . $caller['class'] : '');
+endsnippet
