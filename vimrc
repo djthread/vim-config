@@ -1,6 +1,8 @@
 filetype off
 filetype plugin indent on
 
+let mapleader = ","
+
 set shell=/bin/bash
 set nocompatible
 set modelines=0
@@ -76,9 +78,6 @@ endif
 nnoremap <leader>aa :Ack 
 let g:ackprg="~/.vim/extra/ack -H --nocolor --nogroup --column"
 
-
-
-let mapleader = ","
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 " nmap <silent> <leader>es :so $MYVIMRC<CR>
